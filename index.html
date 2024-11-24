@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/normalize.css">
+  <title>WDD 131 - Dynamic Web Fundamentals - Kyler Evans</title>
+  <meta name="description"
+    content="A simple home page with basic styling. WDD 131 - Dynamic Web Fundamentals - Kyler Evans.">
+  <meta name="author" content="Kyler Evans">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
 
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - Kyler Evans</h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+        <li><a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/introduction?lang=eng&id=p6#p6">Scripture</a>
+        </li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2 class="aboutheading1">About Me</h2>
+      <div>
+        <p>Hello! My name is Kyler and I'm from the United States. I love technology and games. I want to get a job as a
+          programmer some day. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor. Habitant morbi tristique senectus et
+          netus. Diam maecenas sed enim ut sem. Ullamcorper dignissim cras tincidunt lobortis feugiat. Dui sapien eget
+          mi
+          proin sed libero. Ultrices tincidunt arcu non sodales neque sodales. Id faucibus nisl tincidunt eget. Sed
+          euismod nisi porta lorem mollis aliquam ut. Vitae tempus quam pellentesque nec nam aliquam sem et. Sit amet
+          volutpat consequat mauris nunc congue. Lacus vestibulum sed arcu non.</p>
+        <img src="images/profile.jpg" alt="Hello, my name is Kyler Evans" width="200">
+      </div>
+      <h2 class="aboutheading2">Utah, United States</h2>
+      <hr>
+      <div>
+        <img src="images/arches.jpg" alt="Hello, my name is Kyler Evans" width="200">
+        <p>Arches National Park is one of many National Parks here in Utah.
+          Their are a variety of Arches and Heiroglyphs to explore and see.
+          im cras tincidunt lobortis feugiat. Dui sapien eget
+          mi proin sed libero. Ultrices tincidunt arcu non sodales neque sodales. Id faucibus nisl tincidunt eget. Sed
+          euismod nisi porta lorem mollis aliquam ut. Vitae tempus quam pellentesque nec nam aliquam sem et. Sit amet
+          volutpat consequat mauris nunc congue. Lacus vestibulum sed arcu non.</p>
+
+      </div>
+    </section>
+    <section class="card">
+      <h2 class="aboutheading1">Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        <li><a href="https://loremipsum.io/generator">Lorem Ipsum Gen</a></li>
+        <li><a href="https://it-tools.tech/">IT Tools</a></li>
+        <li><a href="https://sudorm-rfslash.github.io/wdd131/">GitHub Pages</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>©️<span id="currentyear"></span> ⚡ Kyler Evans ⚡ USA</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 
 </html>
