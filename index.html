@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - Dynamic Web Fundamentals - Kyler Evans</title>
+  <title>WDD 231 - Dynamic Web Fundamentals - Kyler Evans</title>
   <meta name="description"
-    content="A simple home page with basic styling. WDD 131 - Dynamic Web Fundamentals - Kyler Evans.">
+    content="A simple home page with basic styling. WDD 231 - Dynamic Web Fundamentals - Kyler Evans.">
   <meta name="author" content="Kyler Evans">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,59 +19,71 @@
 </head>
 
 <body>
-
   <header>
-    <h1>WDD 131: Dynamic Web Fundamentals - Kyler Evans</h1>
-    <nav>
+    <img src="images/profile.jpg" alt="Hello, my name is Kyler Evans" width="100">
+    <h1>Kyler Evans</h1>
+    <nav class="topnav">
       <ul>
+        <li><a href="https://sudorm-rfslash.github.io/wdd231/index.html">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="https://github.com/sudorm-rfslash/">GitHub Profile</a></li>
         <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        <li><a href="https://byui.instructure.com/">I-Learn</a></li>
-        <li><a
-            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/introduction?lang=eng&id=p6#p6">Scripture</a>
-        </li>
-        <li><a href="#">Final Project</a></li>
       </ul>
     </nav>
+    <a href="javascript:void(0);" class="nav" onclick="navToggle()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </a>
   </header>
 
   <main>
-    <section class="card">
-      <h2 class="aboutheading1">About Me</h2>
-      <div>
-        <p>Hello! My name is Kyler and I'm from the United States. I love technology and games. I want to get a job as a
-          programmer some day. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor. Habitant morbi tristique senectus et
-          netus. Diam maecenas sed enim ut sem. Ullamcorper dignissim cras tincidunt lobortis feugiat. Dui sapien eget
-          mi
-          proin sed libero. Ultrices tincidunt arcu non sodales neque sodales. Id faucibus nisl tincidunt eget. Sed
-          euismod nisi porta lorem mollis aliquam ut. Vitae tempus quam pellentesque nec nam aliquam sem et. Sit amet
-          volutpat consequat mauris nunc congue. Lacus vestibulum sed arcu non.</p>
-        <img src="images/profile.jpg" alt="Hello, my name is Kyler Evans" width="200">
-      </div>
-      <h2 class="aboutheading2">Utah, United States</h2>
-      <hr>
-      <div>
-        <img src="images/arches.jpg" alt="Hello, my name is Kyler Evans" width="200">
-        <p>Arches National Park is one of many National Parks here in Utah.
-          Their are a variety of Arches and Heiroglyphs to explore and see.
-          im cras tincidunt lobortis feugiat. Dui sapien eget
-          mi proin sed libero. Ultrices tincidunt arcu non sodales neque sodales. Id faucibus nisl tincidunt eget. Sed
-          euismod nisi porta lorem mollis aliquam ut. Vitae tempus quam pellentesque nec nam aliquam sem et. Sit amet
-          volutpat consequat mauris nunc congue. Lacus vestibulum sed arcu non.</p>
+    <div class="cardcontainer">
+      <section class="card">
+        <h2 class="aboutheading1">Course Work</h2>
+        <div>
+          <p>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          </p>
+        </div>
+      </section>
+      <section class="card1">
+        <h2 class="aboutheading1">Moab Utah</h2>
+        <ul>
+          <div>
+            <img src="images/arches.jpg" alt="Hello, my name is Kyler Evans" width="400">
+            <p>Arches National Park is one of many National Parks here in Utah.
+              Their are a variety of Arches and Heiroglyphs to explore and see.
+              im cras tincidunt lobortis feugiat. Dui sapien eget
+              mi proin sed libero. Ultrices tincidunt arcu non sodales neque sodales. Id faucibus nisl tincidunt eget.
+              Sed
+              euismod nisi porta lorem mollis aliquam ut. Vitae tempus quam pellentesque nec nam aliquam sem et. Sit
+              amet
+              volutpat consequat mauris nunc congue. Lacus vestibulum sed arcu non.</p>
+          </div>
+        </ul>
+      </section>
+      <section class="card2">
+        <h2 class="aboutheading1">Web and Computer Programming Certificate</h2>
+        <ul>
+          <div>
+            <section class="button-grid">
+              <a href="#" class="grid-button">CSE 110</a>
+              <a href="#" class="grid-button">WDD 130</a>
+              <a href="#" class="grid-button">CSE 111</a>
+              <a href="#" class="grid-button">CSE 210</a>
+              <a href="#" class="grid-button">WDD 131</a>
+              <a href="#" class="grid-button">WDD 231</a>
+            </section>
 
-      </div>
-    </section>
-    <section class="card">
-      <h2 class="aboutheading1">Web Dev Resources</h2>
-      <ul>
-        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-        <li><a href="https://github.com/">GitHub</a></li>
-        <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
-        <li><a href="https://loremipsum.io/generator">Lorem Ipsum Gen</a></li>
-        <li><a href="https://it-tools.tech/">IT Tools</a></li>
-        <li><a href="https://sudorm-rfslash.github.io/wdd131/">GitHub Pages</a></li>
-      </ul>
-    </section>
+          </div>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer>

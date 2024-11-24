@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* Use the Google Font */
 }
 
 header,
@@ -20,18 +19,53 @@ footer {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 h1 {
   color: white;
-  display: block;
   text-align: center;
   padding: 20px;
 }
 
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .card {
-  flex: 1;
+  flex: 0 0 75%;
+  max-width: 75%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.card2 {
+  flex: 1 1 100%;
   border: 2px solid black;
   border-radius: 15px;
   padding: 0px;
@@ -41,7 +75,7 @@ h1 {
   align-items: center;
 }
 
-.card ul {
+.card2 ul {
   list-style-position: inside;
   padding: 0;
   margin: 0;
@@ -88,8 +122,36 @@ h1 {
 }
 
 .card img {
-  max-width: 100px;
+  max-width: 100%;
   height: auto;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-button {
+  display: inline-block;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #164d70;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.grid-button:hover {
+  background-color: #1b6ca8;
+  cursor: pointer;
 }
 
 nav {
@@ -142,12 +204,53 @@ footer {
   main {
     flex-direction: row;
   }
+
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card {
+    flex: 0 0 75%;
+    max-width: 75%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card1 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card2 {
+    flex: 1 1 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 
 
-
-/* robot font */
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
