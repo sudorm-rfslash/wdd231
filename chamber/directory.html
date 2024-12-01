@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timbuktu Chamber of Commerce - Directory</title>
-  <meta name="description"
-    content="Explore the local business directory for Timbuktu, hosted by the Chamber of Commerce. Join, network, and grow with us!">
-  <meta name="author" content="Your Full Name">
+  <meta name="description" content="Kyler Evans - WDD231 Timbuktu Chamber of Commerce">
+  <meta name="author" content="Kyler Evans">
 
   <meta property="og:title" content="Timbuktu Chamber of Commerce Directory">
   <meta property="og:type" content="website">
@@ -34,12 +33,10 @@
   <header>
     <h1>Timbuktu Chamber of Commerce</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="membership.html">Membership</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="events.html">Events</a>
+      <a href="membership.html">Membership</a>
     </nav>
   </header>
   <main>
@@ -55,7 +52,7 @@
     <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce. WDD 231. Last Modified: <span
         id="last-modified"></span></p>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="scripts/main.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('last-modified').textContent = document.lastModified;
