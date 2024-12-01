@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Apple Inc.",
+        "address": "One Apple Park Way, Cupertino, CA 95014",
+        "phone": "(408) 996-1010",
+        "website": "https://www.apple.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Microsoft Corporation",
+        "address": "One Microsoft Way, Redmond, WA 98052",
+        "phone": "(425) 882-8080",
+        "website": "https://www.microsoft.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Google LLC",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        "phone": "(650) 253-0000",
+        "website": "https://www.google.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Amazon.com, Inc.",
+        "address": "410 Terry Ave N, Seattle, WA 98109",
+        "phone": "(206) 266-1000",
+        "website": "https://www.amazon.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Dbrand",
+        "address": "2525 Speakman Dr, Mississauga, ON L5K 1B1, Canada",
+        "phone": "(800) 512-0917",
+        "website": "https://dbrand.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Dbrand_logo.svg",
+        "membership": "Silver"
+    },
+    {
+        "name": "Ridge Wallet",
+        "address": "11812 San Vicente Blvd #110, Los Angeles, CA 90049",
+        "phone": "(888) 900-1644",
+        "website": "https://www.ridge.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ridge_company_logo.svg",
+        "membership": "Silver"
+    },
+    {
+        "name": "Meta Platforms Inc.",
+        "address": "1 Hacker Way, Menlo Park, CA 94025",
+        "phone": "(650) 543-4800",
+        "website": "https://www.meta.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Meta_Platforms_Inc._logo.svg",
+        "membership": "Gold"
+    }
+]
