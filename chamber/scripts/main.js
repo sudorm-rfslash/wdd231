@@ -1,5 +1,5 @@
 const fetchWeather = async () => {
-  const url = `http://api.openweathermap.org/data/2.5/forecast?=&id=524901&appid=52d90289923cfb853c893acdf01c1de5`;
+  const url = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=52d90289923cfb853c893acdf01c1de5`;
 
   try {
     const response = await fetch(url);
