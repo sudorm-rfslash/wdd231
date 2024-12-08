@@ -6,6 +6,11 @@ body {
   color: #333;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 header,
 footer {
   background-color: #007BFF;
