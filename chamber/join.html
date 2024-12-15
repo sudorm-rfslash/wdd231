@@ -141,6 +141,15 @@
     <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce. WDD 231. Last Modified: <span
         id="lastModified"></span></p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const timestampField = document.getElementById('timestamp');
+      if (timestampField) {
+        const now = new Date();
+        timestampField.value = now.toLocaleString(); // Format as a human-readable string
+      }
+    });
+  </script>
 
   <script src="scripts/getdates.js"></script>
 </body>
