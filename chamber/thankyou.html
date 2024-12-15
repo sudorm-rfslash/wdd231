@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Chamber of Commerce</title>
+  <meta name="description"
+    content="Join the Timbuktu Chamber of Commerce to grow your network and gain access to exclusive benefits.">
+  <meta name="author" content="Timbuktu Chamber of Commerce Team">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="../images/favicon.ico">
+  <script defer src="scripts/join.js"></script>
+  <script src="scripts/main.js"></script>
+  <meta name="author" content="Kyler Evans">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<header>
+  <h1>Thank You for Joining!</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="directory.html" class="active">Directory</a>
+    <a href="events.html">Events</a>
+    <a href="membership.html">Membership</a>
+  </nav>
+</header>
+<main>
+  <section id="form-results">
+    <h2>Your Submission Details</h2>
+    <div id="details-container">
+    </div>
+  </section>
+</main>
+
+<script>
+  const queryParams = new URLSearchParams(window.location.search);
+
+  const firstName = queryParams.get('firstName');
+  const lastName = queryParams.get('lastName');
+  const email = queryParams.get('email');
+  const mobile = queryParams.get('mobile');
+  const businessName = queryParams.get('businessName');
+  const timestamp = queryParams.get('timestamp');
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const detailsContainer = document.getElementById('details-container');
+    detailsContainer.innerHTML = `
+                    <p><strong>First Name:</strong> ${firstName}</p>
+                    <p><strong>Last Name:</strong> ${lastName}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Mobile:</strong> ${mobile}</p>
+                    <p><strong>Business/Organization Name:</strong> ${businessName}</p>
+                    <p><strong>Submission Time:</strong> ${timestamp}</p>
+                `;
+  });
+</script>
+
+<footer>
+  <p>Contact: info@timbuktuchamber.com | Phone: (123) 456-7890</p>
+  <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce. WDD 231. Last Modified: <span
+      id="lastModified"></span></p>
+</footer>
+
+
+</body>
+
+</html>

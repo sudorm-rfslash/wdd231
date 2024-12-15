@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Chamber of Commerce</title>
+  <meta name="description"
+    content="Join the Timbuktu Chamber of Commerce to grow your network and gain access to exclusive benefits.">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="../images/favicon.ico">
+  <script defer src="scripts/getdates.js"></script>
+  <meta name="author" content="Kyler Evans">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Chamber of Commerce Membership Application</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="events.html">Events</a>
+      <a href="membership.html">Membership</a>
+    </nav>
+  </header>
+  <main>
+    <div class="grid-container">
+      <section class="form-section">
+        <h2>Apply for Membership</h2>
+        <form method="get" action="thankyou.html">
+          <label>
+            First Name:
+            <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+          </label>
+          <label>
+            Last Name:
+            <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+          </label>
+          <label>
+            Organizational Title:
+            <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+              pattern="[A-Za-z\-\s]{7,}" required>
+          </label>
+          <label>
+            Email Address:
+            <input type="email" name="email" title="Email Address" autocomplete="email"
+              placeholder="username@example.com" required>
+          </label>
+          <label>
+            Mobile Phone:
+            <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required>
+          </label>
+          <label>
+            Business/Organization Name:
+            <input type="text" name="businessName" title="Business Name" autocomplete="organization" required>
+          </label>
+          <label>
+            Membership Level:
+            <select name="membershipLevel" title="Membership Level" required>
+              <option value="np">Free Membership</option>
+              <option value="bronze">Basic Membership</option>
+              <option value="silver">Deluxe Membership</option>
+              <option value="gold">Ultimate Membership</option>
+            </select>
+          </label>
+          <label>
+            Business/Organization Description:
+            <textarea name="businessDescription" title="Business Description"></textarea>
+          </label>
+          <input type="hidden" name="timestamp" id="timestamp" value="">
+          <input type="submit" value="Submit Application">
+        </form>
+      </section>
+
+      <section class="membership-cards">
+        <div>
+          <h2>Membership Levels</h2>
+        </div>
+        <div></div>
+        <div class="card" id="np-card">
+          <h3>Free Membership</h3>
+          <a href="#np-modal">Learn More</a>
+        </div>
+        <div class="card" id="bronze-card">
+          <h3>Basic Membership</h3>
+          <a href="#bronze-modal">Learn More</a>
+        </div>
+        <div class="card" id="silver-card">
+          <h3>Deluxe Membership</h3>
+          <a href="#silver-modal">Learn More</a>
+        </div>
+        <div class="card" id="gold-card">
+          <h3>Ultimate Membership</h3>
+          <a href="#gold-modal">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Modals -->
+      <div class="modal" id="np-modal">
+        <div class="modal-content">
+          <h3>Free Membership Benefits</h3>
+          <p>No fee. Includes event access and basic listings.</p>
+          <button onclick="closeModal('np-modal')">Close</button>
+        </div>
+      </div>
+      <div class="modal" id="bronze-modal">
+        <div class="modal-content">
+          <h3>Basic Membership Benefits</h3>
+          <p>Basic advertising and event discounts.</p>
+          <button onclick="closeModal('bronze-modal')">Close</button>
+        </div>
+      </div>
+      <div class="modal" id="silver-modal">
+        <div class="modal-content">
+          <h3>Deluxe Membership Benefits</h3>
+          <p>Increased advertising and training opportunities.</p>
+          <button onclick="closeModal('silver-modal')">Close</button>
+        </div>
+      </div>
+      <div class="modal" id="gold-modal">
+        <div class="modal-content">
+          <h3>Ultimate Membership Benefits</h3>
+          <p>Premium benefits including homepage spotlight and VIP event access.</p>
+          <button onclick="closeModal('gold-modal')">Close</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: info@timbuktuchamber.com | Phone: (123) 456-7890</p>
+    <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce. WDD 231. Last Modified: <span
+        id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
