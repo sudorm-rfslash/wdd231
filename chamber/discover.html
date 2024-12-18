@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timbuktu Chamber of Commerce - Directory</title>
+  <meta name="description" content="Kyler Evans - WDD231 Timbuktu Chamber of Commerce">
+  <meta name="author" content="Kyler Evans">
+  <meta property="og:title" content="Timbuktu Chamber of Commerce Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/share-image.jpg">
+  <meta property="og:url" content="https://sudorm-rfslash.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description"
+    content="Explore the local business directory for Timbuktu, hosted by the Chamber of Commerce. Join, network, and grow with us!">
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/lazyload.js" defer></script>
+  <script src="scripts/visits.js" defer></script>
+</head>
+
+
+<body>
+  <header>
+    <h1>Timbuktu Chamber of Commerce</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="events.html">Events</a>
+      <a href="membership.html">Membership</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Discover</h2>
+    <div class="discover-grid">
+      <div class="discover-bar">
+        <div class="sidebar-content">
+          <div id="visitMessage">Loading visit info...</div>
+          <hr>
+          <div>
+            <h3>Local Info</h3>
+            <p>Explore demographics, events, and attractions around Timbuktu.</p>
+          </div>
+          <hr>
+          <div>
+            <h3>Calendar Items:</h3>
+            <p><strong>Monday:</strong> Ice Climbing</p>
+            <p><strong>Tuesday:</strong> Cave Exploration</p>
+            <p><strong>Wednesday:</strong> Turbo Jet Skis</p>
+            <p><strong>Thursday:</strong> Turtle Races</p>
+            <p><strong>Friday:</strong> Pancake Stacking</p>
+            <p><strong>Saturday:</strong> Watermelon Eating</p>
+          </div>
+          <hr>
+          <div>
+            <h3>Daily Fact:</h3>
+            <p>Did you know that being spoon fed exactly 57 fruit snacks by a gorilla while patting your head and
+              rubbing your stomach will help you break the previous record of a mere 56 fruit snacks?? Steve Jargon
+              holds the previous record for "most fruit snack eaten in an hour served on a spoon by a gorilla while
+              patting your head and rubbing your stomach".</p>
+          </div>
+          <hr>
+          <div>
+            <h3>Employee of the Month:</h3>
+            <p>Joe Shmoe has been nominated for his outsanding efforts! He's the best penguin caretaker that anyone
+              could ever ask for.</p>
+          </div>
+        </div>
+      </div>
+      <div class="discover-main">
+        <h3>Local Highlights</h3>
+        <div class="image-gallery">
+          <figure>
+            <img class="lazy" data-src="images/img1.jpg" alt="Foggy Hills">
+            <figcaption>Foggy Hills</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" data-src="images/img2.jpg" alt="Cloudy Castle">
+            <figcaption>Cloudy Castle</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" data-src="images/img3.jpg" alt="Riverside Walk">
+            <figcaption>Riverside Walk</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" data-src="images/img4.jpg" alt="Beautiful Valley">
+            <figcaption>Beautiful Valley</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" data-src="images/img5.jpg" alt="Historic Building">
+            <figcaption>Historic Building</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" data-src="images/img6.jpg" alt="Sunset View">
+            <figcaption>Sunset View</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Contact: info@timbuktuchamber.com | Phone: (123) 456-7890</p>
+    <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce. WDD 231. Last Modified: <span
+        id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
