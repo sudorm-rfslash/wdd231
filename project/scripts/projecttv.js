@@ -52,7 +52,7 @@ function openModal(movie) {
 
   titleLink.innerHTML = `<a href="https://www.themoviedb.org/movie/${movie.id}" target="_blank">${movie.title || movie.name} ⭷</a>`;
   releaserating.innerHTML = `
-    <p><strong>Release Date:</strong> ${formatDate(movie.release_date)}</p>
+    <p><strong>Release Date:</strong> ${formatDate(movie.first_air_date)}</p>
     <p><strong>Rating:</strong> ${movie.vote_average.toFixed(1)}</p>
   `;
   overview.innerHTML = `<strong>Overview:</strong> ${movie.overview || 'No overview available.'}`;
